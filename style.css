@@ -79,5 +79,18 @@ html, body {
         width: 80%;
         
     }
+    .explorer
+    {
+        color: floralwhite;
+        font-weight: bold;
+        width: 50%;
+        height:11vw;
+        border-radius: 20px;
+        border:none;
+        align-self: center;
+        background: linear-gradient(#FF79DA , #9356DC);
+        box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+        
+    }
 
 }
