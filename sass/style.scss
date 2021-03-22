@@ -15,6 +15,15 @@ html, body {
 
 /*-----------------------------------FORMAT MOBILE------------------------------------------------*/
 @media (max-width: 498px) {
+/*---------------------------------REGLES et VARIABLES------------------*/
+$primary:#9356DC;
+$secondary:#FF79DA;
+$tertiary:#99E2D0;
+%shadows{
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);}
+%hovernshadows{ 
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+}
   
 
 /*----------------------------------------HEADER---------------------------------------------------------*/
@@ -115,8 +124,14 @@ html, body {
         border-radius: 20px;
         border:none;
         align-self: center;
-        background: linear-gradient(#FF79DA , #9356DC);
-        box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+        background: linear-gradient($secondary, $primary);
+        &:hover{
+            filter: brightness(150%);
+                box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
+                transform: scale(1.05);
+                
+            }
+        
         
     }
     /*-------------------FONCTIONNEMENT-------------------*/
@@ -142,7 +157,7 @@ html, body {
         list-style-type: none;
         counter-increment: item;
         background-color: rgba(233, 233, 233, 0.486);
-        box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+        @extend %shadows;
         border-radius: 20px;
         width: 70%;
         height: 60px;
@@ -160,7 +175,7 @@ html, body {
             width: 20px;
             vertical-align: top;
             text-align: center;
-            background: #9356DC;
+            background: $primary;
             border-radius: 20px;
             margin-right: 63vw;
         }
@@ -181,7 +196,7 @@ html, body {
         list-style-type: none;
         counter-increment: item;
         background-color: #9256dc1a;
-        box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+        @extend %shadows;
         border-radius: 20px;
         width: 70%;
         height: 60px;
@@ -192,7 +207,7 @@ html, body {
         margin-left: 10vw;
 
         i.fas{
-            color: #9356DC;
+            color: $primary;
             margin-right: 3vw;
     
         }
@@ -204,7 +219,7 @@ html, body {
             width: 20px;
             vertical-align: top;
             text-align: center;
-            background: #9356DC;
+            background: $primary;
             border-radius: 20px;
             margin-right: 63vw;
         }
@@ -242,12 +257,13 @@ html, body {
         
         display: flex;
         flex-direction: column;
-        box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+        @extend %shadows;
         margin-left: 4vw;
         border-radius: 20px;
         background-color: white;
         width: 90%;
         height: 270px;
+        
         p{
             font-weight: 800;
             font-size: 4vw;
@@ -273,19 +289,27 @@ html, body {
                 width: 70%;
             }
            
-            span{
+            .heart{
                 font-size: 6vw;
                 display: flex;
                 justify-content: flex-end;
                 position: absolute;
-                width: 85%;
                 margin-top: 20px;
-
+                margin-left: 75vw;
+                border: none;
+                background-color: rgb(255, 255, 255);
+                color: white;
+            }
+            i.fas{
+               /* text-shadow: 0 0  2px #000;*/
+               -webkit-text-fill-color: white;
+               -webkit-text-stroke-width: 2px;
+               -webkit-text-stroke-color: black;
             }
               
         }
     }
-    
+/*-------------------------------------------FOOTER----------------------------------------*/
         .end{
             background-color: rgb(66, 66, 66);
             padding-top: 0;
@@ -294,7 +318,7 @@ html, body {
         
             h3{
                 margin: 0;
-                margin-left: 2vw;
+                margin-left: 9vw;
                 
             }
            
