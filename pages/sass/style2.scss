@@ -1,0 +1,116 @@
+/*./dart-sass/sass sass/style2.scss style2.css --watch*/
+*{
+    scroll-behavior: smooth;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    img{
+        object-fit: cover;
+        
+    }
+    /*-----------------------------------FORMAT MOBILE------------------------------------------------*/
+@media (max-width: 498px) {
+    /*---------------------------------REGLES et VARIABLES------------------*/
+    .card, .background, .top {
+      box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+    }
+  
+    /*----------------------------------------HEADER---------------------------------------------------------*/
+    header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      padding: 10px 16px;
+      height: 40px;
+      width: 100%;
+      border-bottom-color: rgba(58, 58, 58, 0.288);
+      border-bottom-style: solid;
+      padding-top: 20px;
+    
+    }
+    header span {
+      display: block;
+      width: 20px;
+      margin-right: 65px;
+    }
+  
+    #head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+  
+    .logo {
+      height: 10vw;
+      margin-right: 90px;
+    }
+}
+/*-----------------BANNIERE----------------------------*/
+    .banniere
+    {
+        width: 100%;
+        height: 300px;
+    }
+/*---------------------------SECTION1--------------------------*/ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .explorer {
+    color: floralwhite;
+    font-weight: bold;
+    width: 50%;
+    height: 11vw;
+    border-radius: 20px;
+    border: none;
+    align-self: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+  }
+  .explorer:hover {
+    filter: brightness(150%);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
+    transform: scale(1.05);
+  }
+/*-------------------------------------------FOOTER----------------------------------------*/
+.end {
+    background-color: #424242;
+    padding-top: 20px;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  .end h3 {
+    margin: 0;
+    margin-left: 9vw;
+  }
+  .end li {
+    list-style: none;
+    margin: 5px;
+    color: white;
+  }
+  .end i.fas {
+    color: white;
+    margin-right: 10px;
+  }
+
+}
+  
+    
+
