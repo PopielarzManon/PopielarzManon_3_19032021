@@ -105,8 +105,18 @@ html, body {
         margin-left: 3vw;
         font-family: 'Shrikhand', cursive;
         font-size: 7vw;
+        
+        svg{
+            height: 10vw;
+            width: 8vw;
+            margin-right: 10vw;
+            color: rgba(255, 255, 255, 0);
+            stroke: #818181;
+            stroke-width: 10vw;
+            
+        }
         .heart{
-                font-size: 6vw;
+                font-size: 5vw;
                 display: flex;
                 justify-content: flex-end;
                 position: absolute;
@@ -115,24 +125,8 @@ html, body {
                 border: none;
                 background-color: rgb(238, 238, 238);
                 color: white;
+                width: 10vw;
 
-        
-            i.fas{
-
-                -webkit-text-fill-color:  rgb(238, 238, 238);
-                -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: black;
-                &:hover{
-                    transition:transform 450ms;
-                    transition: -webkit-text-fill-color 600ms ;
-                    transform: scale(1.1);
-                    transition-delay: -webkit-text-stroke-width 150ms;
-                    -webkit-text-fill-color: #99E2D0;
-                    -webkit-text-stroke-width: 0;
-                    cursor: pointer;
-                    }
-                
-                }
             }
         }
     }
@@ -184,16 +178,15 @@ html, body {
                         transition: 0.5s;
                         right: 0;
                         i.fas {
-                            transform: rotate(-360deg);
-                            transition: transform 500ms ease-in-out;
+                            transform: rotate(360deg);
+                            transition: transform 550ms ease-in-out;
                         }
                     }
                     .price {
                         margin-left: 60vw;
                     }
                     .sub{
-                        transition-delay: 5ms;
-                        width: 60%;
+                        width: 65%;
                     }
 
                 }
@@ -229,7 +222,7 @@ html, body {
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
-                    width: 75%;
+                    width: 78%;
                 }
                 
                
