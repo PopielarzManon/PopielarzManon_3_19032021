@@ -1,3 +1,4 @@
+/*./dart-sass/sass sass/style.scss style.css --watch*/
 * {
   scroll-behavior: smooth;
   transition: 0.3s;
@@ -276,6 +277,14 @@ html img, body img {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+  }
+  .card .figcap i.fas:hover {
+    transition: transform 450ms;
+    transition: -webkit-text-fill-color 600ms;
+    transform: scale(1.1);
+    transition-delay: -webkit-text-stroke-width 150ms;
+    -webkit-text-fill-color: #99E2D0;
+    -webkit-text-stroke-width: 0;
   }
 
   /*-------------------------------------------FOOTER----------------------------------------*/
