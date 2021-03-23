@@ -123,6 +123,7 @@ html .first-container, body .first-container {
   background-color: #eeeeee;
 }
 html .first-container .first-container-wrapper .container, body .first-container .first-container-wrapper .container {
+  position: relative;
   background-color: white;
   border-radius: 20px;
   width: 90%;
@@ -130,17 +131,17 @@ html .first-container .first-container-wrapper .container, body .first-container
   margin: 20px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
 }
 html .first-container .first-container-wrapper .container .check, body .first-container .first-container-wrapper .container .check {
-  display: none;
-}
-html .first-container .first-container-wrapper .container:hover .check, body .first-container .first-container-wrapper .container:hover .check {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15%;
+  width: 60px;
   height: 60px;
   position: absolute;
+  right: -100px;
   font-size: 8vw;
   margin-left: 75vw;
   border-bottom-right-radius: 20px;
@@ -148,7 +149,14 @@ html .first-container .first-container-wrapper .container:hover .check, body .fi
   border: none;
   color: white;
   background-color: #99E2D0;
-  cursor: pointer;
+}
+html .first-container .first-container-wrapper .container:hover .check, body .first-container .first-container-wrapper .container:hover .check {
+  transition: 0.5s;
+  right: 0;
+}
+html .first-container .first-container-wrapper .container:hover .check i.fas, body .first-container .first-container-wrapper .container:hover .check i.fas {
+  transform: rotate(-360deg);
+  transition: transform 500ms ease-in-out;
 }
 html .first-container .first-container-wrapper .container:hover .price, body .first-container .first-container-wrapper .container:hover .price {
   margin-left: 60vw;
