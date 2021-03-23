@@ -9,9 +9,11 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
+  background-color: #eeeeee;
   /*-----------------------------------FORMAT MOBILE------------------------------------------------*/
   /*-----------------BANNIERE----------------------------*/
   /*---------------------------SECTION1--------------------------*/
+  /*---------------------FIN----------------*/
   /*-------------------------------------------FOOTER----------------------------------------*/
 }
 html img, body img {
@@ -22,7 +24,15 @@ html img, body img {
     /*---------------------------------REGLES et VARIABLES------------------*/
     /*----------------------------------------HEADER---------------------------------------------------------*/
   }
-  html .card, html .background, html .top, body .card, body .background, body .top {
+  html .first-container .first-container-wrapper h2, html .first-container .first-container-wrapper h3, html .first-container .first-container-wrapper h4, body .first-container .first-container-wrapper h2, body .first-container .first-container-wrapper h3, body .first-container .first-container-wrapper h4 {
+    font-size: 5vw;
+    color: #777777;
+    padding-bottom: 1px;
+    border-bottom: #99E2D0 solid 2px;
+    width: 10%;
+    margin-left: 6vw;
+  }
+  html .first-container .first-container-wrapper .container, body .first-container .first-container-wrapper .container {
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
   }
   html header, body header {
@@ -34,9 +44,10 @@ html img, body img {
     padding: 10px 16px;
     height: 40px;
     width: 100%;
-    border-bottom-color: rgba(58, 58, 58, 0.288);
-    border-bottom-style: solid;
     padding-top: 20px;
+  }
+  html header i.fas, body header i.fas {
+    color: #414141;
   }
   html header span, body header span {
     display: block;
@@ -55,11 +66,133 @@ html img, body img {
     margin-right: 90px;
   }
 }
+html .overlap, body .overlap {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+}
 html .banniere, body .banniere {
   width: 100%;
   height: 300px;
+  position: relative;
 }
-html .explorer, body .explorer {
+html .title, body .title {
+  background-color: #eeeeee;
+  padding-top: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  width: 100%;
+  margin-top: 250px;
+  padding-bottom: 5px;
+}
+html .title h1, body .title h1 {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  margin-left: 3vw;
+  font-family: "Shrikhand", cursive;
+  font-size: 7vw;
+}
+html .title h1 .heart, body .title h1 .heart {
+  font-size: 6vw;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 75vw;
+  border: none;
+  background-color: #eeeeee;
+  color: white;
+}
+html .title h1 .heart i.fas, body .title h1 .heart i.fas {
+  -webkit-text-fill-color: #eeeeee;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+html .title h1 .heart i.fas:hover, body .title h1 .heart i.fas:hover {
+  transition: transform 450ms;
+  transition: -webkit-text-fill-color 600ms;
+  transform: scale(1.1);
+  transition-delay: -webkit-text-stroke-width 150ms;
+  -webkit-text-fill-color: #99E2D0;
+  -webkit-text-stroke-width: 0;
+  cursor: pointer;
+}
+html .first-container, body .first-container {
+  background-color: #eeeeee;
+}
+html .first-container .first-container-wrapper .container, body .first-container .first-container-wrapper .container {
+  background-color: white;
+  border-radius: 20px;
+  width: 90%;
+  height: 60px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+html .first-container .first-container-wrapper .container .check, body .first-container .first-container-wrapper .container .check {
+  display: none;
+}
+html .first-container .first-container-wrapper .container:hover .check, body .first-container .first-container-wrapper .container:hover .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 60px;
+  position: absolute;
+  font-size: 8vw;
+  margin-left: 75vw;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #99E2D0;
+  cursor: pointer;
+}
+html .first-container .first-container-wrapper .container:hover .price, body .first-container .first-container-wrapper .container:hover .price {
+  margin-left: 60vw;
+}
+html .first-container .first-container-wrapper .container:hover .sub, body .first-container .first-container-wrapper .container:hover .sub {
+  transition-delay: 5ms;
+  width: 60%;
+}
+html .first-container .first-container-wrapper .container p, body .first-container .first-container-wrapper .container p {
+  margin: 5px;
+  margin-left: 3vw;
+}
+html .first-container .first-container-wrapper .container .bold, body .first-container .first-container-wrapper .container .bold {
+  font-weight: bolder;
+  font-weight: 7vw;
+}
+html .first-container .first-container-wrapper .container .price, body .first-container .first-container-wrapper .container .price {
+  font-size: 3.5vw;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 10%;
+  position: absolute;
+  margin-top: 9vw;
+  margin-left: 70vw;
+  padding-right: 9.5vw;
+}
+html .first-container .first-container-wrapper .container .sub, body .first-container .first-container-wrapper .container .sub {
+  font-size: 4vw;
+  color: #707070;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 75%;
+}
+html .select, body .select {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+html .select .explorer, body .select .explorer {
   color: floralwhite;
   font-weight: bold;
   width: 50%;
@@ -69,10 +202,11 @@ html .explorer, body .explorer {
   align-self: center;
   background: linear-gradient(#FF79DA, #9356DC);
 }
-html .explorer:hover, body .explorer:hover {
+html .select .explorer:hover, body .select .explorer:hover {
   filter: brightness(150%);
   box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
   transform: scale(1.05);
+  cursor: pointer;
 }
 html .end, body .end {
   background-color: #424242;
