@@ -175,10 +175,13 @@ html .first-container .first-container-wrapper .container:hover .check, body .fi
 }
 html .first-container .first-container-wrapper .container:hover .check i.fas, body .first-container .first-container-wrapper .container:hover .check i.fas {
   transform: rotate(360deg);
-  transition: transform 250ms ease-in-out;
+  transition: 550ms linear;
 }
 html .first-container .first-container-wrapper .container:hover > .price, body .first-container .first-container-wrapper .container:hover > .price {
   left: 60vw;
+}
+html .first-container .first-container-wrapper .container:hover > .sub, body .first-container .first-container-wrapper .container:hover > .sub {
+  width: 65%;
 }
 html .first-container .first-container-wrapper .container .check, body .first-container .first-container-wrapper .container .check {
   display: flex;
@@ -197,7 +200,12 @@ html .first-container .first-container-wrapper .container .check, body .first-co
   background-color: #99E2D0;
 }
 html .first-container .first-container-wrapper .container .sub, body .first-container .first-container-wrapper .container .sub {
-  width: 65%;
+  font-size: 4vw;
+  color: #707070;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 78%;
 }
 html .first-container .first-container-wrapper p, body .first-container .first-container-wrapper p {
   margin: 5px;
@@ -217,14 +225,6 @@ html .first-container .first-container-wrapper .price, body .first-container .fi
   position: absolute;
   top: 9vw;
   left: 70vw;
-}
-html .first-container .first-container-wrapper .sub, body .first-container .first-container-wrapper .sub {
-  font-size: 4vw;
-  color: #707070;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 78%;
 }
 
 /*---------------------FIN----------------*/
