@@ -29,53 +29,51 @@ $tertiary:#99E2D0;
 }
 
 
-  
-    /*-------------------- LOADING -----------------------*/
+  /*-------------------- LOADING -----------------------*/
 
-    .loader-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #fafafa;
-        z-index: 999;
-        transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-        animation: backload 1s ease forwards;
+.loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d8d2df;
+    z-index: 999;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    animation: backload 2s ease forwards;
+    .loader{
+        width: 60px;
+        height: 60px;
+        border: 5px solid rgb(228, 228, 228);
+        border-radius: 50%;
+        border-top: 5px solid #99E2D0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        animation: loader 0.5s ease infinite;
 
-        .loader{
-            width: 120px;
-            height: 120px;
-            border: 14px solid rgb(228, 228, 228);
-            border-radius: 50%;
-            border-top: 14px solid #99E2D0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            animation: loader 1s ease forwards;
-    
-        }
-        @keyframes backload{
- 
-            100%{
-                opacity:0;
-                visibility: hidden;
-            }
-        }  
-        @keyframes loader {
-            0%{
-                transform: translate(-50%, -50%) rotate(0deg);
-    
-            }
-  
-            100%{
-                transform: translate(-50%, -50%) rotate(360deg);
-                opacity:0;
-                visibility: hidden;
-            }
-        }   
     }
-  
+    @keyframes backload{
+        80%{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        100%{
+            opacity:0;
+            visibility: hidden;
+        }
+    }  
+    @keyframes loader {
+        0%{
+            transform: translate(-50%, -50%) rotate(0deg);
+
+        }
+        100%{
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }   
+}
 
 /*----------------------------------------HEADER---------------------------------------------------------*/
     header{
