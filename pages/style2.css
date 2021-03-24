@@ -14,8 +14,6 @@ html, body {
   /*-----------------------------------FORMAT MOBILE------------------------------------------------*/
   /*-----------------BANNIERE----------------------------*/
   /*---------------------------SECTION1--------------------------*/
-  /*---------------------FIN----------------*/
-  /*-------------------------------------------FOOTER----------------------------------------*/
 }
 html img, body img {
   object-fit: cover;
@@ -171,6 +169,17 @@ html .first-container .first-container-wrapper .container, body .first-container
   overflow: hidden;
   cursor: pointer;
 }
+html .first-container .first-container-wrapper .container:hover .check, body .first-container .first-container-wrapper .container:hover .check {
+  transition: 0.5s;
+  right: 0;
+}
+html .first-container .first-container-wrapper .container:hover .check i.fas, body .first-container .first-container-wrapper .container:hover .check i.fas {
+  transform: rotate(360deg);
+  transition: transform 250ms ease-in-out;
+}
+html .first-container .first-container-wrapper .container:hover > .price, body .first-container .first-container-wrapper .container:hover > .price {
+  left: 60vw;
+}
 html .first-container .first-container-wrapper .container .check, body .first-container .first-container-wrapper .container .check {
   display: flex;
   justify-content: center;
@@ -187,29 +196,18 @@ html .first-container .first-container-wrapper .container .check, body .first-co
   color: white;
   background-color: #99E2D0;
 }
-html .first-container .first-container-wrapper .container:hover .check, body .first-container .first-container-wrapper .container:hover .check {
-  transition: 0.5s;
-  right: 0;
-}
-html .first-container .first-container-wrapper .container:hover .check i.fas, body .first-container .first-container-wrapper .container:hover .check i.fas {
-  transform: rotate(360deg);
-  transition: transform 550ms ease-in-out;
-}
-html .first-container .first-container-wrapper .container:hover .price, body .first-container .first-container-wrapper .container:hover .price {
-  margin-left: 60vw;
-}
-html .first-container .first-container-wrapper .container:hover .sub, body .first-container .first-container-wrapper .container:hover .sub {
+html .first-container .first-container-wrapper .container .sub, body .first-container .first-container-wrapper .container .sub {
   width: 65%;
 }
-html .first-container .first-container-wrapper .container p, body .first-container .first-container-wrapper .container p {
+html .first-container .first-container-wrapper p, body .first-container .first-container-wrapper p {
   margin: 5px;
   margin-left: 3vw;
 }
-html .first-container .first-container-wrapper .container .bold, body .first-container .first-container-wrapper .container .bold {
+html .first-container .first-container-wrapper .bold, body .first-container .first-container-wrapper .bold {
   font-weight: bolder;
   font-weight: 7vw;
 }
-html .first-container .first-container-wrapper .container .price, body .first-container .first-container-wrapper .container .price {
+html .first-container .first-container-wrapper .price, body .first-container .first-container-wrapper .price {
   font-size: 3.5vw;
   font-weight: bolder;
   display: flex;
@@ -217,11 +215,10 @@ html .first-container .first-container-wrapper .container .price, body .first-co
   flex-wrap: wrap;
   width: 10%;
   position: absolute;
-  margin-top: 9vw;
-  margin-left: 70vw;
-  padding-right: 9.5vw;
+  top: 9vw;
+  left: 70vw;
 }
-html .first-container .first-container-wrapper .container .sub, body .first-container .first-container-wrapper .container .sub {
+html .first-container .first-container-wrapper .sub, body .first-container .first-container-wrapper .sub {
   font-size: 4vw;
   color: #707070;
   text-overflow: ellipsis;
@@ -229,14 +226,16 @@ html .first-container .first-container-wrapper .container .sub, body .first-cont
   white-space: nowrap;
   width: 78%;
 }
-html .select, body .select {
+
+/*---------------------FIN----------------*/
+.select {
   display: flex;
   justify-content: center;
   align-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-html .select .explorer, body .select .explorer {
+.select .explorer {
   color: floralwhite;
   font-weight: bold;
   width: 50%;
@@ -246,28 +245,33 @@ html .select .explorer, body .select .explorer {
   align-self: center;
   background: linear-gradient(#FF79DA, #9356DC);
 }
-html .select .explorer:hover, body .select .explorer:hover {
+.select .explorer:hover {
   filter: brightness(150%);
   box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
   transform: scale(1.05);
   cursor: pointer;
 }
-html .end, body .end {
+
+/*-------------------------------------------FOOTER----------------------------------------*/
+.end {
   background-color: #424242;
   padding-top: 20px;
   margin-top: 0;
   padding-bottom: 20px;
 }
-html .end h3, body .end h3 {
+
+.end h3 {
   margin: 0;
   margin-left: 9vw;
 }
-html .end li, body .end li {
+
+.end li {
   list-style: none;
   margin: 5px;
   color: white;
 }
-html .end i.fas, body .end i.fas {
+
+.end i.fas {
   color: white;
   margin-right: 10px;
 }

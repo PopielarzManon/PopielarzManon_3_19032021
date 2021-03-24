@@ -199,6 +199,20 @@ html, body {
                 flex-direction: column;
                 overflow: hidden;
                 cursor: pointer;
+
+
+                &:hover .check{
+                        
+                    transition: 0.5s;
+                    right: 0;
+                    i.fas {
+                        transform: rotate(360deg);
+                        transition: transform 250ms ease-in-out;
+                    }
+                }
+                &:hover > .price{
+                    left:60vw;
+                }
                 
                 .check{
                     
@@ -215,23 +229,10 @@ html, body {
                     border-top-right-radius: 20px;
                     border: none;
                     color: white;
-                    background-color:#99E2D0;
+                    background-color:#99E2D0;              
 
-
-                
                 }
-                &:hover{
-                    .check{
-                        transition: 0.5s;
-                        right: 0;
-                        i.fas {
-                            transform: rotate(360deg);
-                            transition: transform 550ms ease-in-out;
-                        }
-                    }
-                    .price {
-                        margin-left: 60vw;
-                    }
+
                     .sub{
                         width: 65%;
                     }
@@ -258,9 +259,8 @@ html, body {
                     flex-wrap: wrap;
                     width: 10%;
                     position:absolute;
-                    margin-top: 9vw;
-                    margin-left: 70vw;
-                    padding-right: 9.5vw;
+                    top: 9vw;
+                    left: 70vw;
                     
                 }
                 .sub{
@@ -304,13 +304,13 @@ html, body {
             align-self: center;
 
             background: linear-gradient(#FF79DA, #9356DC);
-        }
-        .explorer:hover {
+        &:hover {
             filter: brightness(150%);
             box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
             transform: scale(1.05);
             cursor: pointer;
         }
+    } 
     }    
 /*-------------------------------------------FOOTER----------------------------------------*/
 .end {
@@ -332,8 +332,3 @@ html, body {
     color: white;
     margin-right: 10px;
   }
-
-}
-  
-    
-
