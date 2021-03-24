@@ -168,6 +168,22 @@ html .first-container .first-container-wrapper .container, body .first-container
   flex-direction: column;
   overflow: hidden;
   cursor: pointer;
+  opacity: 1;
+  animation-name: fadein;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.3s;
+  animation-duration: 1s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 html .first-container .first-container-wrapper .container:hover .check, body .first-container .first-container-wrapper .container:hover .check {
   transition: 0.5s;
@@ -176,7 +192,7 @@ html .first-container .first-container-wrapper .container:hover .check, body .fi
 }
 html .first-container .first-container-wrapper .container:hover .check i.fas, body .first-container .first-container-wrapper .container:hover .check i.fas {
   transform: rotate(360deg);
-  transition: 700ms linear;
+  transition: 500ms linear;
 }
 html .first-container .first-container-wrapper .container:hover > .price, body .first-container .first-container-wrapper .container:hover > .price {
   left: 60vw;
@@ -259,6 +275,10 @@ html .first-container .first-container-wrapper .price, body .first-container .fi
   padding-top: 20px;
   margin-top: 0;
   padding-bottom: 20px;
+}
+.end a {
+  color: white;
+  text-decoration: none;
 }
 
 .end h3 {

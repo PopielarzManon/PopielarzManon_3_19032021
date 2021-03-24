@@ -199,6 +199,24 @@ html, body {
                 flex-direction: column;
                 overflow: hidden;
                 cursor: pointer;
+                opacity: 1;
+                animation-name: fadein;
+                animation-timing-function: ease-in-out;
+                animation-delay: 1.3s;
+                animation-duration: 1s;
+                
+                
+                @keyframes fadein {
+                    0% {
+                        opacity: 0;
+                    }
+                    60%{
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
 
 
                 &:hover .check{
@@ -208,7 +226,7 @@ html, body {
                     transition: 500ms ease-in-out;
                     i.fas {
                         transform: rotate(360deg);
-                        transition: 700ms linear;
+                        transition: 500ms linear;
                     }
                     
                 }
@@ -322,6 +340,10 @@ html, body {
     padding-top: 20px;
     margin-top: 0;
     padding-bottom: 20px;
+    a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
   }
   .end h3 {
     margin: 0;
