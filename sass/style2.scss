@@ -18,12 +18,6 @@ html, body {
     /*---------------------------------REGLES MIXIN VARIABLES------------------*/
     @import "./utils/mixin";
     @import "./utils/variables";
-  
-
-      /*-------------------- LOADING -----------------------*/
-
-    @import "./components/loader.scss";
-  
     /*----------------------------------------HEADER---------------------------------------------------------*/
     @import "./layout/header2.scss";
 
@@ -93,7 +87,6 @@ html, body {
             opacity: 1;
             animation-name: fadein;
             animation-timing-function: ease-in-out;
-            animation-delay: 1.3s;
             animation-duration: 1s;
                 
                 

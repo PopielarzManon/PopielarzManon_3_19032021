@@ -20,50 +20,9 @@ html img, body img {
 @media (max-width: 498px) {
   html, body {
     /*---------------------------------REGLES MIXIN VARIABLES------------------*/
-    /*-------------------- LOADING -----------------------*/
     /*----------------------------------------HEADER---------------------------------------------------------*/
     /*-----------------BANNIERE----------------------------*/
     /*---------------------------SECTION1--------------------------*/
-  }
-  html .loader-container, body .loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #d8d2df;
-    z-index: 999;
-    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-    animation: backload 2s ease forwards;
-  }
-  html .loader-container .loader, body .loader-container .loader {
-    width: 60px;
-    height: 60px;
-    border: 5px solid #e4e4e4;
-    border-radius: 50%;
-    border-top: 5px solid #99E2D0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    animation: loader 0.5s ease infinite;
-  }
-  @keyframes backload {
-    80% {
-      opacity: 1;
-      visibility: visible;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-  @keyframes loader {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
   }
   html header, body header {
     background-color: white;
@@ -203,7 +162,6 @@ html img, body img {
     opacity: 1;
     animation-name: fadein;
     animation-timing-function: ease-in-out;
-    animation-delay: 1.3s;
     animation-duration: 1s;
   }
   @keyframes fadein {
