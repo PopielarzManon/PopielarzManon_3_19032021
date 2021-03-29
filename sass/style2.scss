@@ -14,10 +14,11 @@ html, body {
         
     }
     /*-----------------------------------FORMAT MOBILE------------------------------------------------*/
-@media (max-width: 498px) {
+    @media (max-width: 498px) {
     /*---------------------------------REGLES MIXIN VARIABLES------------------*/
-    @import "./utils/variables";
     @import "./utils/mixin";
+    @import "./utils/variables";
+  
 
       /*-------------------- LOADING -----------------------*/
 
@@ -209,7 +210,7 @@ html, body {
         padding-bottom: 50px;
         
         .explorer{
-            @include grad;
+            
             color: floralwhite;
             font-weight: bold;
             width: 50%;
@@ -220,7 +221,7 @@ html, body {
             
             
             &:hover{
-                   @include hoverbtn;
+                   
                     
                 }
             
@@ -228,4 +229,7 @@ html, body {
     }    
 /*-------------------------------------------FOOTER----------------------------------------*/
     @import "./layout/footer";
+    .end{
+        padding-top: 30px;
+    }
   }
