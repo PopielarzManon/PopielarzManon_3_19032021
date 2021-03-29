@@ -20,24 +20,10 @@ html img, body img {
 @media (max-width: 498px) {
   html, body {
     /*---------------------------------REGLES MIXIN VARIABLES------------------*/
-    /*----------------------------------------HEADER---------------------------------------------------------*/
+    /*----------------------------------------LAYOUT---------------------------------------------------------*/
+    /*------------------------------COMPONENTS-----------------------*/
     /*-----------------BANNIERE----------------------------*/
     /*---------------------------SECTION1--------------------------*/
-  }
-  html .explorer, body .explorer {
-    color: floralwhite;
-    font-weight: bold;
-    width: 50%;
-    height: 11vw;
-    border-radius: 20px;
-    border: none;
-    align-self: center;
-    background: linear-gradient(#FF79DA, #9356DC);
-  }
-  html .explorer:hover, body .explorer:hover {
-    filter: brightness(125%);
-    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
-    transform: scale(1.05);
   }
   html header, body header {
     background-color: white;
@@ -85,6 +71,44 @@ html img, body img {
   html .logo, body .logo {
     height: 10vw;
     margin-right: 90px;
+  }
+  html .end, body .end {
+    background-color: #424242;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  html .end a, body .end a {
+    color: white;
+    text-decoration: none;
+  }
+  html .end h3, body .end h3 {
+    margin: 0;
+    margin-left: 9vw;
+  }
+  html .end li, body .end li {
+    list-style: none;
+    margin: 5px;
+    color: white;
+  }
+  html .end i.fas, body .end i.fas {
+    color: white;
+    margin-right: 10px;
+  }
+  html .explorer, body .explorer {
+    color: floralwhite;
+    font-weight: bold;
+    width: 50%;
+    height: 11vw;
+    border-radius: 20px;
+    border: none;
+    align-self: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+  }
+  html .explorer:hover, body .explorer:hover {
+    filter: brightness(125%);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
+    transform: scale(1.05);
   }
   html .overlap, body .overlap {
     width: 100%;
@@ -255,29 +279,6 @@ html .select, body .select {
   align-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-html .end, body .end {
-  background-color: #424242;
-  padding-top: 0;
-  margin-top: 0;
-  padding-bottom: 20px;
-}
-html .end a, body .end a {
-  color: white;
-  text-decoration: none;
-}
-html .end h3, body .end h3 {
-  margin: 0;
-  margin-left: 9vw;
-}
-html .end li, body .end li {
-  list-style: none;
-  margin: 5px;
-  color: white;
-}
-html .end i.fas, body .end i.fas {
-  color: white;
-  margin-right: 10px;
 }
 html .end, body .end {
   padding-top: 30px;
