@@ -221,6 +221,20 @@ h1{
         background-color: white;
         width: 90%;
         height: 270px;
+
+        .new{
+            p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $tertiary;
+            color: darken($tertiary, $amount: 50);
+            width: 25%;
+            height: 4%;
+            position: absolute;
+            right: 8vw;
+            }
+        }
         
         p{
             font-weight: 800;
@@ -254,5 +268,5 @@ h1{
     }
 /*-------------------------------------------FOOTER----------------------------------------*/
     @import "./layout/footer";
-    
+
 }
