@@ -16,11 +16,7 @@ html img, body img {
 
 /*-----------------------------------FORMAT MOBILE------------------------------------------------*/
 @media (max-width: 498px) {
-  /*---------------------------------REGLES et VARIABLES------------------*/
-  .card, .background, .top {
-    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
-  }
-
+  /*---------------------------------REGLES MIXIN VARIABLES------------------*/
   /*-------------------- LOADING -----------------------*/
   .loader-container {
     position: fixed;
@@ -157,7 +153,7 @@ html img, body img {
     background: linear-gradient(#FF79DA, #9356DC);
   }
   .explorer:hover {
-    filter: brightness(150%);
+    filter: brightness(125%);
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
     transform: scale(1.05);
   }
@@ -186,6 +182,7 @@ html img, body img {
     list-style-type: none;
     counter-increment: item;
     background-color: rgba(233, 233, 233, 0.486);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
     border-radius: 20px;
     width: 70%;
     height: 60px;
@@ -221,6 +218,7 @@ html img, body img {
     list-style-type: none;
     counter-increment: item;
     background-color: #9256dc1a;
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
     border-radius: 20px;
     width: 70%;
     height: 60px;
@@ -274,6 +272,7 @@ html img, body img {
   .card {
     display: flex;
     flex-direction: column;
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
     margin-left: 4vw;
     border-radius: 20px;
     background-color: white;
@@ -328,7 +327,7 @@ html img, body img {
     opacity: 0;
     position: absolute;
     top: 4vw;
-    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
