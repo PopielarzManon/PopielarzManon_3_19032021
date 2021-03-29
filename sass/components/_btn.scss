@@ -1,0 +1,18 @@
+.explorer
+{
+    color: floralwhite;
+    font-weight: bold;
+    width: 50%;
+    height:11vw;
+    border-radius: 20px;
+    border:none;
+    align-self: center;
+    @include grad;
+    
+    &:hover{
+           @include hoverbtn;
+            
+        }
+    
+    
+}

@@ -18,6 +18,7 @@ html, body {
     /*---------------------------------REGLES MIXIN VARIABLES------------------*/
     @import "./utils/mixin";
     @import "./utils/variables";
+    @import "./components/btn";
     /*----------------------------------------HEADER---------------------------------------------------------*/
     @import "./layout/header2.scss";
 
@@ -202,24 +203,9 @@ html, body {
         padding-top: 50px;
         padding-bottom: 50px;
         
-        .explorer{
-            
-            color: floralwhite;
-            font-weight: bold;
-            width: 50%;
-            height:11vw;
-            border-radius: 20px;
-            border:none;
-            align-self: center;
-            
-            
-            &:hover{
-                   
-                    
-                }
-            
-        }
-    }    
+        
+    }  
+     
 /*-------------------------------------------FOOTER----------------------------------------*/
     @import "./layout/footer";
     .end{

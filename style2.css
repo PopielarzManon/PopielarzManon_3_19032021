@@ -24,6 +24,21 @@ html img, body img {
     /*-----------------BANNIERE----------------------------*/
     /*---------------------------SECTION1--------------------------*/
   }
+  html .explorer, body .explorer {
+    color: floralwhite;
+    font-weight: bold;
+    width: 50%;
+    height: 11vw;
+    border-radius: 20px;
+    border: none;
+    align-self: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+  }
+  html .explorer:hover, body .explorer:hover {
+    filter: brightness(125%);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
+    transform: scale(1.05);
+  }
   html header, body header {
     background-color: white;
     display: flex;
@@ -240,15 +255,6 @@ html .select, body .select {
   align-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-html .select .explorer, body .select .explorer {
-  color: floralwhite;
-  font-weight: bold;
-  width: 50%;
-  height: 11vw;
-  border-radius: 20px;
-  border: none;
-  align-self: center;
 }
 html .end, body .end {
   background-color: #424242;
