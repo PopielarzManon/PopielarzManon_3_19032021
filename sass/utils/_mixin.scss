@@ -1,4 +1,12 @@
-@mixin heartbnt{
+@mixin grad{
+    background: linear-gradient($secondary, $primary);
+} 
+@mixin hoverbtn{
+    filter: brightness(125%);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
+    transform: scale(1.05);
+}
+@mixin heartbtn{
     font-size: 8vw;
     display: flex;
     justify-content: flex-end;
@@ -38,7 +46,7 @@
       }   
 }
 
-@mixin heartbnt2{
+@mixin heartbtn2{
     font-size: 8vw;
     display: flex;
     justify-content: flex-end;
@@ -88,16 +96,11 @@
     
 }
 
-@mixin hoverbtn{
-    filter: brightness(125%);
-    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
-    transform: scale(1.05);
-}
+
+
 @mixin shadows{
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
     
 }
-@mixin grad{
-    background: linear-gradient($secondary, $primary)
-} 
+
 

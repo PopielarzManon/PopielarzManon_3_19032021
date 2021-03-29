@@ -8,7 +8,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     margin: 0;
-    background-color: rgb(238, 238, 238);;
+    background-color: rgb(238, 238, 238);
     img{
         object-fit: cover;
         
@@ -60,7 +60,7 @@ html, body {
         width: 100%;
         
         .heart{
-            @include heartbnt2;
+            @include heartbtn2;
            }
         }
     }
@@ -208,19 +208,22 @@ html, body {
         padding-top: 50px;
         padding-bottom: 50px;
         
-        .explorer {
+        .explorer{
+            @include grad;
             color: floralwhite;
             font-weight: bold;
             width: 50%;
-            height: 11vw;
+            height:11vw;
             border-radius: 20px;
-            border: none;
+            border:none;
             align-self: center;
-            @include grad;
-            &:hover {
-            @include hoverbtn;
-            }
-    
+            
+            
+            &:hover{
+                   @include hoverbtn;
+                    
+                }
+            
         }
     }    
 /*-------------------------------------------FOOTER----------------------------------------*/
