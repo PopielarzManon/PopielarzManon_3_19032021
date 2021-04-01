@@ -1,13 +1,5 @@
-@mixin grad{
-    background: linear-gradient($secondary, $primary);
-} 
-@mixin hoverbtn{
-    filter: brightness(125%);
-    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
-    transform: scale(1.05);
-}
 @mixin heartbtn{
-    font-size: 7vw;
+    font-size: 8vw;
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -32,16 +24,15 @@
         position: absolute;
         top: 4vw;
         @include grad;
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         
         
        
         &:hover{
-            font-size: 7vw;
-            transition: 400ms;
+            font-size: 8.5vw;
+            transition: 600ms;
             opacity: 1;
-            background-clip: text;
             
             
         }
@@ -74,36 +65,16 @@
         position: absolute;
         top: 4vw;
         @include grad;
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         
        
         &:hover{
-            font-size: 8vw;
-            transition: 400ms;
+            font-size: 8.5vw;
+            transition: 600ms;
             opacity: 1;
-            background-clip: text;
             
             
         }
       }   
 }
-@mixin tittles {
-        font-size: 5vw;
-        color: rgb(119, 119, 119);
-        padding-bottom: 1px;
-        border-bottom:  #99E2D0 solid 2px;
-        width: 10%;
-        margin-left: 6vw;
-    
-    
-}
-
-
-
-@mixin shadows{
-    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
-    
-}
-
-

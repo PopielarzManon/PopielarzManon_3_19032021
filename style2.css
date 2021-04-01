@@ -11,19 +11,13 @@ html, body {
   margin: 0;
   background-color: #eeeeee;
   /*-----------------------------------FORMAT MOBILE------------------------------------------------*/
-  /*---------------------FIN----------------*/
-  /*-------------------------------------------FOOTER----------------------------------------*/
 }
 html img, body img {
   object-fit: cover;
 }
 @media (max-width: 498px) {
   html, body {
-    /*---------------------------------REGLES MIXIN VARIABLES------------------*/
-    /*----------------------------------------LAYOUT---------------------------------------------------------*/
-    /*------------------------------COMPONENTS-----------------------*/
-    /*-----------------BANNIERE----------------------------*/
-    /*---------------------------SECTION1--------------------------*/
+    /*--------------------------------------RECTIFICATION-FOOTER----------------------------------------*/
   }
   html header, body header {
     background-color: white;
@@ -84,7 +78,10 @@ html img, body img {
   }
   html .end h3, body .end h3 {
     margin: 0;
-    margin-left: 9vw;
+    margin-left: 5vw;
+  }
+  html .end h3 img, body .end h3 img {
+    transform: scale(0.8);
   }
   html .end li, body .end li {
     list-style: none;
@@ -119,6 +116,9 @@ html img, body img {
     width: 100%;
     height: 300px;
     position: relative;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
   html .title, body .title {
     background-color: #eeeeee;
@@ -138,6 +138,9 @@ html img, body img {
     font-family: "Shrikhand", cursive;
     font-size: 7vw;
     width: 100%;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
   html .title h1 .heart, body .title h1 .heart {
     font-size: 8vw;
@@ -151,6 +154,9 @@ html img, body img {
     border: none;
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
   html .title h1 .heart i.far, body .title h1 .heart i.far {
     color: #686565;
@@ -166,13 +172,14 @@ html img, body img {
     position: absolute;
     top: 4vw;
     background: linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   html .title h1 .heart i.fas:hover, body .title h1 .heart i.fas:hover {
-    font-size: 8.5vw;
-    transition: 600ms;
+    font-size: 8vw;
+    transition: 400ms;
     opacity: 1;
+    background-clip: text;
   }
   html .first-container, body .first-container {
     background-color: #eeeeee;
@@ -184,6 +191,9 @@ html img, body img {
     border-bottom: #99E2D0 solid 2px;
     width: 10%;
     margin-left: 6vw;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
   html .first-container .first-container-wrapper .container, body .first-container .first-container-wrapper .container {
     position: relative;
@@ -201,13 +211,14 @@ html img, body img {
     opacity: 1;
     animation-name: fadein;
     animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
   }
   @keyframes fadein {
     0% {
       opacity: 0;
     }
-    60% {
+    80% {
       opacity: 0;
     }
     100% {
@@ -215,7 +226,7 @@ html img, body img {
     }
   }
   html .first-container .first-container-wrapper .container:hover .check, body .first-container .first-container-wrapper .container:hover .check {
-    transition: 0.5s;
+    transition: 0.3s;
     right: 0;
     transition: 500ms ease-in-out;
   }
@@ -224,10 +235,10 @@ html img, body img {
     transition: 500ms linear;
   }
   html .first-container .first-container-wrapper .container:hover > .price, body .first-container .first-container-wrapper .container:hover > .price {
-    left: 60vw;
+    left: 58vw;
   }
   html .first-container .first-container-wrapper .container:hover > .sub, body .first-container .first-container-wrapper .container:hover > .sub {
-    width: 70%;
+    width: 65%;
   }
   html .first-container .first-container-wrapper .container .check, body .first-container .first-container-wrapper .container .check {
     display: flex;
@@ -251,7 +262,7 @@ html img, body img {
   }
   html .first-container .first-container-wrapper .bold, body .first-container .first-container-wrapper .bold {
     font-weight: bolder;
-    font-size: 4vw;
+    font-size: 4.3vw;
     display: flex;
     justify-content: flex-start;
   }
@@ -260,28 +271,29 @@ html img, body img {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-size: 3.5vw;
   }
   html .first-container .first-container-wrapper .price, body .first-container .first-container-wrapper .price {
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-weight: bolder;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 10%;
     position: absolute;
-    top: 9vw;
+    top: 7.5vw;
     left: 70vw;
   }
-}
-html .select, body .select {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-html .end, body .end {
-  padding-top: 30px;
+  html .select, body .select {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  html .end, body .end {
+    padding-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style2.css.map */

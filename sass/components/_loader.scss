@@ -21,8 +21,12 @@
 
     }
     @keyframes backload{
+        0%{
+            opacity: 1;
+            visibility: visible;
+        }
         80%{
-            opacity: 0.75;
+            opacity: 0.98;
             visibility: visible;
         }
 

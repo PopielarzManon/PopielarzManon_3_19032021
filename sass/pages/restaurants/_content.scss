@@ -1,0 +1,160 @@
+.title{
+    background-color: rgb(238, 238, 238);
+    padding-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: 250px;
+    padding-bottom: 5px;
+    h1{
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        margin-left: 3vw;
+        font-family: 'Shrikhand', cursive;
+        font-size: 7vw;
+        width: 100%;
+        animation-name: fadein;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        
+        .heart{
+            @include heartbtn2;
+            animation-name: fadein;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+           }
+        }
+    }
+    
+    .first-container{
+        background-color: rgb(238, 238, 238);
+       
+        .first-container-wrapper{
+            
+
+            h2, h2, h3, h4{
+                @include tittles;
+                animation-name: fadein;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+            }
+        .container{
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+            width: 90%;
+            height: 60px; 
+            margin: 20px;
+            @include shadows;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            overflow: hidden;
+            cursor: pointer;
+            opacity: 1;
+            animation-name: fadein;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+            
+                
+                
+                @keyframes fadein {
+                    0% {
+                        opacity: 0;
+                    }
+                    80%{
+                        opacity: 0;
+                    }
+ 
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+
+            &:hover .check{
+                        
+                transition: 0.3s;
+                right: 0;
+                transition: 500ms ease-in-out;
+                    i.fas {
+                        transform: rotate(360deg);
+                        transition: 500ms linear;
+                    }
+                    
+                }
+                &:hover > .price{
+                    left:58vw;
+                }
+                &:hover > .sub{
+                    width: 65%;
+                    
+                }
+
+               
+                
+            .check{
+                    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                position:absolute;
+                right: -100px;
+                font-size: 8vw;
+                margin-left: 75vw;
+                border-bottom-right-radius: 20px;
+                border-top-right-radius: 20px;
+                border: none;
+                color: white;
+                background-color:#99E2D0;              
+
+            }
+
+          
+
+        }            
+
+            p{
+                margin: 5px;
+                margin-left: 3vw;   
+
+                }
+            .bold{
+                font-weight: bolder;
+                font-size: 4.3vw;
+                display: flex;
+                justify-content: flex-start;
+                }
+
+            .sub{
+                width: 80%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: 3.5vw;
+                } 
+              
+            .price{
+                font-size: 3vw;
+                font-weight: bolder;
+                display: flex;
+                justify-content:flex-end;
+                flex-wrap: wrap;
+                width: 10%;
+                position:absolute;
+                top: 7.5vw;
+                left: 70vw;
+                    
+                }
+               
+                
+               
+            }
+
+        }
+    

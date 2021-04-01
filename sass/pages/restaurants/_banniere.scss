@@ -1,0 +1,16 @@
+    
+.overlap{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+}
+.banniere
+    {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        animation-name: fadein;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        
+    }
