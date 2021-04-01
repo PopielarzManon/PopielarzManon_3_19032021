@@ -4,10 +4,11 @@
     font-weight: bold;
     width: 50%;
     height:11vw;
-    border-radius: 20px;
+    border-radius: 40px;
     border:none;
     align-self: center;
     @include grad;
+    font-size: 3.5vw;
     
     &:hover{
            @include hoverbtn;

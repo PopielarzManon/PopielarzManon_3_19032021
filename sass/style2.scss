@@ -28,10 +28,14 @@ html, body {
 @import "./pages/restaurants/content";
  @import "./pages/restaurants/end";
      
-/*--------------------------------------RECTIFICATION-FOOTER----------------------------------------*/
     
     .end{
         padding-top: 30px;
     }
   }
 }
+@media (min-width: 499px) and (max-width: 769px)
+    {
+
+
+    }
