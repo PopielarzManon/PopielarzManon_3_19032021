@@ -1,4 +1,6 @@
+
 .select{   
+    @media (max-width: 498px) {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -6,4 +8,17 @@
     padding-bottom: 50px;
     
     
-}  
+ 
+}
+/*-----------------------------------TABLETTE-------------*/
+@media (min-width: 497px) and (max-width: 769px)
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+
+    }
+} 

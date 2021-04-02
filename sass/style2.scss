@@ -13,29 +13,16 @@ html, body {
         object-fit: cover;
         
     }
-    /*-----------------------------------FORMAT MOBILE------------------------------------------------*/
-    @media (max-width: 498px) {
-
-    @import "./utils/mixin";
-    @import "./utils/variables";
-   
-    @import "./layout/header2.scss";
-    @import "./layout/footer";
-  
-   @import "./components/btn";
-
-    @import "./pages/restaurants/banniere";
-@import "./pages/restaurants/content";
- @import "./pages/restaurants/end";
-     
-    
-    .end{
-        padding-top: 30px;
-    }
-  }
 }
-@media (min-width: 499px) and (max-width: 769px)
-    {
+
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./layout/header2.scss";
+@import "./components/btn";
+@import "./components/heartbtn";
+@import "./pages/restaurants/banniere";
+@import "./pages/restaurants/content";
+@import "./pages/restaurants/end";
+@import "./layout/footer";
 
 
-    }

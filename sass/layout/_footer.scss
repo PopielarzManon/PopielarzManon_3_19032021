@@ -11,6 +11,7 @@
 
     h3{
         margin: 0;
+        padding-top: 20px;
         margin-left: 5vw;
         img{
             transform: scale(0.8);
@@ -30,12 +31,15 @@
     }
 }
 }
-@media (min-width: 499px) and (max-width: 769px){
+/*---------------------TABLETTE--------------------------------*/
+@media (min-width: 497px) and (max-width: 769px){
     .end{
         background-color: rgb(66, 66, 66);
         padding-top: 0;
         margin-top: 0;
         padding-bottom: 20px;
+        
+       
         a{
             color: rgb(255, 255, 255);
             text-decoration: none;
@@ -46,6 +50,7 @@
             justify-content: center;
             margin: 0;
             padding-top: 50px;
+            padding-bottom: 50px;
             img{
                 transform: scale(1.5);
             }
@@ -54,8 +59,10 @@
         ul{
         
             margin-right: 10vw;
+            display: flex;
             justify-content: center;
             align-items: center;
+           flex-direction: column;
       
        
          li{
