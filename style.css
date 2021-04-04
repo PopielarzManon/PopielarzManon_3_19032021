@@ -123,10 +123,81 @@ html img, body img {
     background: #9356DC;
     border-radius: 20px;
     margin-right: 63vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
   .top i.fa, .top i.fas {
     color: #9b9b9b;
     margin-right: 3vw;
+  }
+  .top:hover {
+    background-color: #f2eafb;
+  }
+  .top:hover i.fas, .top:hover i.fa {
+    color: #9356DC;
+  }
+}
+@media (min-width: 770px) {
+  h2 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-left: 3vw;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: item;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .top {
+    position: relative;
+    list-style-type: none;
+    counter-increment: item;
+    background-color: rgba(233, 233, 233, 0.486);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+    border-radius: 80px;
+    width: 45vw;
+    height: 7vw;
+    margin: 2vw;
+    display: flex;
+    align-items: center;
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+  .top:before {
+    position: absolute;
+    color: white;
+    content: counter(item);
+    height: 3vw;
+    width: 3vw;
+    vertical-align: top;
+    text-align: center;
+    background: #9356DC;
+    border-radius: 80px;
+    left: -1.5vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .top i.fa, .top i.fas {
+    color: #9b9b9b;
+    margin-left: 4vw;
+    margin-right: 2vw;
   }
   .top:hover {
     background-color: #f2eafb;
@@ -269,6 +340,42 @@ html img, body img {
     margin-right: 90px;
   }
 }
+@media (min-width: 770px) {
+  header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px 16px;
+    height: 8vw;
+    width: 100%;
+    border-bottom-color: rgba(58, 58, 58, 0.288);
+    border-bottom-style: solid;
+    border-width: 5px;
+  }
+  header i.fas {
+    display: none;
+  }
+  header span {
+    display: block;
+    width: 20px;
+    margin-right: 65px;
+  }
+
+  #head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .logo {
+    height: 4vw;
+    margin-right: 90px;
+  }
+}
 @media (max-width: 498px) {
   .place {
     color: #585858;
@@ -405,6 +512,92 @@ html img, body img {
 
   .explorer {
     font-size: 3.5vw;
+  }
+}
+/*---------------------------DASKTOP---------------------*/
+@media (min-width: 770px) {
+  .place {
+    color: #585858;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 7vw;
+    padding-top: 10px;
+    background-color: rgba(190, 190, 190, 0.397);
+  }
+  .place form {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .place form p {
+    width: 30vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .place form i.fas {
+    font-size: 2vw;
+  }
+  .place form input {
+    margin-left: 2vw;
+    border: none;
+    background-color: rgba(233, 233, 233, 0.486);
+    height: 60px;
+    width: 80%;
+    text-overflow: ellipsis;
+  }
+  .place form input::placeholder {
+    font-size: 2vw;
+  }
+
+  .first-container-wrapper {
+    background-color: rgba(233, 233, 233, 0.486);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+
+  h1 {
+    padding-top: 10px;
+    font-size: 2vw;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    width: 49vw;
+    margin: 0;
+    margin-top: 10px;
+  }
+  h1 p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub {
+    display: inline-block;
+    text-align: center;
+    color: #636363;
+    width: 80%;
+    font-size: 2vw;
+  }
+
+  .explorer {
+    font-size: 2vw;
+    height: 5vw;
+    width: 30vw;
   }
 }
 @media (max-width: 498px) {
@@ -730,6 +923,7 @@ html img, body img {
   }
   .end h3 {
     margin: 0;
+    padding-top: 20px;
     margin-left: 5vw;
   }
   .end h3 img {
@@ -745,7 +939,8 @@ html img, body img {
     margin-right: 10px;
   }
 }
-@media (min-width: 499px) and (max-width: 769px) {
+/*---------------------TABLETTE--------------------------------*/
+@media (min-width: 497px) and (max-width: 769px) {
   .end {
     background-color: #424242;
     padding-top: 0;
@@ -761,20 +956,66 @@ html img, body img {
     justify-content: center;
     margin: 0;
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   .end h3 img {
     transform: scale(1.5);
   }
   .end ul {
     margin-right: 10vw;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .end ul li {
     list-style: none;
     margin: 5vw;
     color: white;
     font-size: 4vw;
+  }
+  .end ul i.fas {
+    color: white;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 770px) {
+  .end {
+    background-color: #424242;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  .end a {
+    color: white;
+    text-decoration: none;
+  }
+  .end h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .end h3 img {
+    transform: scale(2);
+  }
+  .end ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 150px;
+  }
+  .end ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 2vw;
+    color: white;
+    font-size: 2vw;
+    width: 25vw;
   }
   .end ul i.fas {
     color: white;
