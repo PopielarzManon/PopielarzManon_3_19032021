@@ -16,10 +16,10 @@ html, body {
 
 @import "./utils/variables";
 @import "./utils/mixin";
-@import "./pages/home/fonctionnement";
 @import "./components/loader.scss";
 @import "./components/btn";
 @import "./components/heartbtn";
+@import "./pages/home/fonctionnement";
 @import "./layout/header.scss";
 @import "./pages/home/head.scss";
 @import "./pages/home/resto";

@@ -140,6 +140,25 @@ header .logo {
   transform: scale(1.05);
 }
 
+/*---------------------DESKTOP------------------*/
+@media (min-width: 770px) {
+  .explorer {
+    color: floralwhite;
+    font-weight: bold;
+    width: 50%;
+    height: 8vw;
+    border-radius: 40px;
+    border: none;
+    align-self: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+    font-size: 2vw;
+  }
+  .explorer:hover {
+    filter: brightness(125%);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
+    transform: scale(1.05);
+  }
+}
 @media (max-width: 498px) {
   .overlap {
     width: 100%;
@@ -699,18 +718,18 @@ header .logo {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 3vw;
+    padding-bottom: 0.5vw;
   }
   .end h3 img {
-    transform: scale(2);
+    transform: scale(1);
   }
   .end ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding-bottom: 150px;
+    padding-bottom: 2vw;
   }
   .end ul li {
     display: flex;
@@ -719,7 +738,7 @@ header .logo {
     list-style: none;
     margin: 2vw;
     color: white;
-    font-size: 2vw;
+    font-size: 1vw;
     width: 25vw;
   }
   .end ul i.fas {

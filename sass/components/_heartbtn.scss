@@ -81,7 +81,52 @@
             }
           }
 
-      }  
+      } 
+      @media (min-width: 770px) {
+        font-size: 2vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        padding-left: 18vw;
+        height: 10vw;
+        width: 5vw;
+        border: none;
+        background:rgba(0, 0, 0, 0);
+        cursor: pointer;
+        position: absolute;
+        i.far{
+            color: rgb(104, 101, 101);
+            position: relative;
+            top: 3vw;
+            left: 2vw;
+            opacity: 1;
+
+            &:hover{
+                opacity: 0;
+            }
+        }
+        i.fas{
+            opacity: 0;
+            position: absolute;
+            top: 3vw;
+            left: 19vw;
+            @include grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            
+           
+            &:hover{
+                font-size: 2vw;
+                transition: 600ms;
+                opacity: 1;
+                
+                
+            }
+          }
+
+      } 
 }
 
 @mixin heartbtn2{
