@@ -6,88 +6,7 @@
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
     transform: scale(1.05);
 }
-@mixin heartbtn{
-    font-size: 7vw;
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right: 10vw;
-    height: 15vw;
-    width: 9vw;
-    border: none;
-    background:rgba(0, 0, 0, 0);
-    cursor: pointer;
-    i.far{
-        color: rgb(104, 101, 101);
-        position: absolute;
-        top: 4vw;
-        opacity: 1;
-        
-        &:hover{
-            opacity: 0;
-        }
-    }
-    i.fas{
-        opacity: 0;
-        position: absolute;
-        top: 4vw;
-        @include grad;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-        
-       
-        &:hover{
-            font-size: 7vw;
-            transition: 400ms;
-            opacity: 1;
-            background-clip: text;
-            
-            
-        }
-      }   
-}
 
-@mixin heartbtn2{
-    font-size: 8vw;
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right: 5vw;
-    height: 15vw;
-    width: 9vw;
-    top: 7vw;
-    border: none;
-    background:rgba(0, 0, 0, 0);
-    cursor: pointer;
-    i.far{
-        color: rgb(104, 101, 101);
-        position: absolute;
-        top: 4vw;
-        opacity: 1;
-        &:hover{
-            opacity: 0;
-        }
-    }
-    i.fas{
-        opacity: 0;
-        position: absolute;
-        top: 4vw;
-        @include grad;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-       
-        &:hover{
-            font-size: 8vw;
-            transition: 400ms;
-            opacity: 1;
-            background-clip: text;
-            
-            
-        }
-      }   
-}
 @mixin tittles {
         font-size: 5vw;
         color: rgb(119, 119, 119);
@@ -95,6 +14,15 @@
         border-bottom:  #99E2D0 solid 2px;
         width: 10%;
         margin-left: 6vw;
+        @media (min-width: 770px) {
+        font-size: 2vw;
+        color: rgb(119, 119, 119);
+        padding-bottom: 1px;
+        border-bottom:  #99E2D0 solid 2px;
+        width: 4%;
+        margin-left: 6vw;
+
+        }
     
     
 }
@@ -103,6 +31,11 @@
 
 @mixin shadows{
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
+    
+}
+@mixin cardhover {
+    transform: scale(1.08);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
     
 }
 

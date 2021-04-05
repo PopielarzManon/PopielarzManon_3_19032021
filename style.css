@@ -81,13 +81,13 @@ html img, body img {
   .explorer {
     color: floralwhite;
     font-weight: bold;
-    width: 50%;
-    height: 8vw;
+    width: 30%;
+    height: 4vw;
     border-radius: 40px;
     border: none;
     align-self: center;
     background: linear-gradient(#FF79DA, #9356DC);
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .explorer:hover {
     filter: brightness(125%);
@@ -134,8 +134,8 @@ html img, body img {
     position: absolute;
     color: white;
     content: counter(item);
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     vertical-align: top;
     text-align: center;
     background: #9356DC;
@@ -152,6 +152,8 @@ html img, body img {
   }
   .top:hover {
     background-color: #f2eafb;
+    transform: scale(1.08);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
   }
   .top:hover i.fas, .top:hover i.fa {
     color: #9356DC;
@@ -215,11 +217,14 @@ html img, body img {
   }
   .top:hover {
     background-color: #f2eafb;
+    transform: scale(1.08);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
   }
   .top:hover i.fas, .top:hover i.fa {
     color: #9356DC;
   }
 }
+/*----------------------------TABLETTE----------------------------*/
 @media (min-width: 770px) {
   h2 {
     font-size: 2vw;
@@ -281,6 +286,8 @@ html img, body img {
   }
   .top:hover {
     background-color: #f2eafb;
+    transform: scale(1.08);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
   }
   .top:hover i.fas, .top:hover i.fa {
     color: #9356DC;
@@ -308,20 +315,19 @@ html img, body img {
     width: 20px;
     margin-right: 65px;
   }
-
-  #head {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .logo {
-    height: 10vw;
-    margin-right: 90px;
-  }
 }
+header #head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+header .logo {
+  height: 10vw;
+  margin-right: 90px;
+}
+
 @media (min-width: 499px) and (max-width: 769px) {
   header {
     background-color: white;
@@ -356,8 +362,10 @@ html img, body img {
   .logo {
     height: 10vw;
     margin-right: 90px;
+    transform: scale(0.5);
   }
 }
+/*-----------------------------DESKTOP----------------------*/
 @media (min-width: 770px) {
   header {
     background-color: white;
@@ -392,6 +400,7 @@ html img, body img {
   .logo {
     height: 4vw;
     margin-right: 90px;
+    transform: scale(0.5);
   }
 }
 @media (max-width: 498px) {
@@ -658,7 +667,7 @@ html img, body img {
     border-radius: 20px;
     background-color: white;
     width: 90%;
-    height: 270px;
+    height: 275px;
   }
   .card .new p {
     display: flex;
@@ -693,6 +702,9 @@ html img, body img {
   }
   .card .figcap p {
     width: 70%;
+  }
+  .card .figcap .heart {
+    /*-------------------------DESKTOP------------------------------*/
   }
 }
 @media (max-width: 498px) and (max-width: 498px) {
@@ -790,17 +802,20 @@ html img, body img {
     top: 3vw;
     left: 2vw;
     opacity: 1;
+    font-size: 2vw;
   }
   .card .figcap .heart i.far:hover {
+    font-size: 2vw;
     opacity: 0;
   }
   .card .figcap .heart i.fas {
     opacity: 0;
     position: absolute;
+    font-size: 2vw;
     top: 3vw;
     left: 19vw;
     background: linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card .figcap .heart i.fas:hover {
@@ -859,6 +874,9 @@ html img, body img {
     width: 90%;
     height: 270px;
     margin: 1.5vw;
+  }
+  .card button {
+    /*-------------------------DESKTOP------------------------------*/
   }
 }
 @media (min-width: 499px) and (max-width: 769px) and (max-width: 498px) {
@@ -956,17 +974,20 @@ html img, body img {
     top: 3vw;
     left: 2vw;
     opacity: 1;
+    font-size: 2vw;
   }
   .card button i.far:hover {
+    font-size: 2vw;
     opacity: 0;
   }
   .card button i.fas {
     opacity: 0;
     position: absolute;
+    font-size: 2vw;
     top: 3vw;
     left: 19vw;
     background: linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card button i.fas:hover {
@@ -1075,6 +1096,9 @@ html img, body img {
     height: 25vw;
     margin: 1vw;
   }
+  .card button {
+    /*-------------------------DESKTOP------------------------------*/
+  }
 }
 @media (min-width: 770px) and (max-width: 498px) {
   .card button {
@@ -1171,17 +1195,20 @@ html img, body img {
     top: 3vw;
     left: 2vw;
     opacity: 1;
+    font-size: 2vw;
   }
   .card button i.far:hover {
+    font-size: 2vw;
     opacity: 0;
   }
   .card button i.fas {
     opacity: 0;
     position: absolute;
+    font-size: 2vw;
     top: 3vw;
     left: 19vw;
     background: linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card button i.fas:hover {
@@ -1278,10 +1305,10 @@ html img, body img {
     justify-content: center;
     margin: 0;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
   .end h3 img {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   .end ul {
     margin-right: 10vw;
@@ -1294,7 +1321,7 @@ html img, body img {
     list-style: none;
     margin: 5vw;
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .end ul i.fas {
     color: white;
@@ -1336,7 +1363,7 @@ html img, body img {
     list-style: none;
     margin: 2vw;
     color: white;
-    font-size: 1vw;
+    font-size: 1.5vw;
     width: 25vw;
   }
   .end ul i.fas {

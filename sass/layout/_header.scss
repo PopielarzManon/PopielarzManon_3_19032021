@@ -1,5 +1,6 @@
-@media (max-width: 498px){
+
     header{
+        @media (max-width: 498px){
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -79,10 +80,13 @@
     .logo{
         height: 10vw;
         margin-right: 90px;
+        transform: scale(0.5);
+        
     
     }
     
 }
+/*-----------------------------DESKTOP----------------------*/
 @media (min-width: 770px) {
     header{
         background-color: rgb(255, 255, 255);
@@ -122,6 +126,7 @@
     .logo{
         height: 4vw;
         margin-right: 90px;
+        transform: scale(0.5);
     
     }
 

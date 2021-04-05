@@ -23,13 +23,13 @@
 {
     color: floralwhite;
     font-weight: bold;
-    width: 50%;
-    height:8vw;
+    width: 30%;
+    height:4vw;
     border-radius: 40px;
     border:none;
     align-self: center;
     @include grad;
-    font-size: 2vw;
+    font-size: 1.5vw;
     
     &:hover{
            @include hoverbtn;
