@@ -17,6 +17,7 @@ html img, body img {
 
 header {
   /*---------------------TABLETTE--------------------------------*/
+  /*------------------DESKTOP----------------------*/
 }
 @media (max-width: 498px) {
   header {
@@ -121,6 +122,58 @@ header .logo {
   height: 10vw;
   margin-right: 30vw;
   padding-left: 9vw;
+}
+@media (min-width: 770px) {
+  header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px 16px;
+    height: 8vw;
+    width: 100%;
+    border-bottom-color: rgba(58, 58, 58, 0.288);
+    border-bottom-style: solid;
+    border-width: 5px;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header a:link {
+    text-decoration: none;
+  }
+  header a:visited {
+    text-decoration: none;
+  }
+  header a:hover {
+    text-decoration: none;
+  }
+  header a:active {
+    text-decoration: none;
+  }
+  header i.fas {
+    display: block;
+    color: gray;
+    text-decoration: none;
+    font-size: 4vw;
+  }
+  header span {
+    display: block;
+    width: 20px;
+    margin-right: 65px;
+  }
+}
+header #head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+header .logo {
+  height: 4vw;
+  margin-right: 90px;
 }
 
 .explorer {
