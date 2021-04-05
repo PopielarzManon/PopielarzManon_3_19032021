@@ -1,4 +1,4 @@
-/*./dart-sass/sass sass/style2.scss style2.css --watch*/
+/*./dart-sass/sass sass/style2.scss style2.css --watch-*/
 * {
   scroll-behavior: smooth;
   transition: 0.3s;
@@ -472,7 +472,7 @@ html img, body img {
     transition: 500ms linear;
   }
   .first-container .first-container-wrapper .container:hover > .price {
-    left: 58vw;
+    left: 55vw;
   }
   .first-container .first-container-wrapper .container:hover > .sub {
     width: 65%;
