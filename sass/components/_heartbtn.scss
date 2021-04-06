@@ -116,7 +116,7 @@
             top: 3vw;
             left: 19vw;
             @include grad;
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
             
