@@ -95,7 +95,7 @@
                     left:55vw;
                 }
                 &:hover > .sub{
-                    width: 65%;
+                    width: 60%;
                     
                 }
 
@@ -110,7 +110,7 @@
                 height: 100%;
                 position:absolute;
                 right: -100px;
-                font-size: 8vw;
+                font-size: 5.5vw;
                 margin-left: 75vw;
                 border-bottom-right-radius: 20px;
                 border-top-right-radius: 20px;
@@ -132,9 +132,12 @@
             .bold{
                 margin-top: 2vw;
                 font-weight: bolder;
-                font-size: 4.3vw;
+                font-size: 4vw;
                 display: flex;
                 justify-content: flex-start;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
                 }
 
             .sub{
@@ -153,7 +156,7 @@
                 flex-wrap: wrap;
                 width: 10%;
                 position:absolute;
-                top: 7.5vw;
+                top: 9vw;
                 left: 70vw;
                     
                 }
@@ -216,8 +219,8 @@
                     background-color: white;
                     border-radius: 30px;
                     width: 90%;
-                    height: 17vw; 
-                    margin: 20px;
+                    height: 13vw; 
+                    margin: 4vw;
                     @include shadows;
                     display: flex;
                     justify-content: flex-start;
@@ -228,7 +231,7 @@
                     animation-name: fadein;
                     animation-timing-function: ease-in-out;
                     animation-iteration-count: 1;
-                    animation-duration: 2s;
+                    animation-duration: 2.5s;
                     margin-left: 6vw;
                     
                         
@@ -279,7 +282,7 @@
                         height: 100%;
                         position:absolute;
                         right: -150px;
-                        font-size: 8vw;
+                        font-size: 5vw;
                         margin-left: 75vw;
                         border-bottom-right-radius: 20px;
                         border-top-right-radius: 20px;
@@ -323,7 +326,7 @@
                         width: 10%;
                         position:absolute;
                         top: 7.5vw;
-                        left: 70vw;
+                        left: 74vw;
                             
                         }
                        
@@ -434,9 +437,13 @@
                         }
                         
                     }
+                    &:hover > .bold{
+                        width: 40vw;
+                    }
                     &:hover > .price{
                         right:8vw;
                     }
+                   
                     &:hover > .sub{
                         width: 50%;
                         
@@ -469,16 +476,23 @@
             }            
     
                 p{
-                    margin: 1vw;
-                    margin-left: 3vw;   
+                    margin:0.5vw;
+                    margin-left: 1vw; 
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;  
+                    
     
                     }
                 .bold{
-                    margin-top: 0.9vw;
+                    margin-top: 1vw;
                     font-weight: bolder;
                     font-size: 1.4vw;
                     display: flex;
                     justify-content: flex-start;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
                     }
     
                 .sub{
@@ -486,19 +500,19 @@
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     overflow: hidden;
-                    font-size: 01vw;
+                    font-size: 1.4vw;
                     } 
                   
                 .price{
-                    font-size: 1vw;
+                    font-size: 1.5vw;
                     font-weight: bolder;
                     display: flex;
                     justify-content:flex-end;
                     flex-wrap: wrap;
                     width: 10%;
                     position:absolute;
-                    top: 3.5vw;
-                    right: 4vw;
+                    top: 3.8vw;
+                    right: 2vw;
                         
                     }
                    

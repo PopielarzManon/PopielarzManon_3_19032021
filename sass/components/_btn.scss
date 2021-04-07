@@ -1,3 +1,4 @@
+@media (max-width: 498px){
 .explorer
 {
     color: floralwhite;
@@ -16,6 +17,30 @@
         }
     
     
+}
+}
+/*---------------------TABLETTE--------------------------------*/
+@media (min-width: 497px) and (max-width: 769px){
+    .explorer
+{
+    color: floralwhite;
+    font-weight: 100;
+    width: 50%;
+    height:11vw;
+    border-radius: 40px;
+    border:none;
+    align-self: center;
+    @include grad;
+    font-size: 3vw;
+    
+    &:hover{
+           @include hoverbtn;
+            
+        }
+    
+    
+}
+
 }
 /*---------------------DESKTOP------------------*/
 @media (min-width: 770px){

@@ -158,7 +158,8 @@ html img, body img {
   header span {
     display: block;
     width: 20px;
-    margin-right: 35vw;
+    margin-left: 6vw;
+    margin-right: 32vw;
   }
 
   #head {
@@ -174,23 +175,43 @@ html img, body img {
     margin-right: 40vw;
   }
 }
-.explorer {
-  color: floralwhite;
-  font-weight: bold;
-  width: 50%;
-  height: 11vw;
-  border-radius: 40px;
-  border: none;
-  align-self: center;
-  background: linear-gradient(#FF79DA, #9356DC);
-  font-size: 3.5vw;
+@media (max-width: 498px) {
+  .explorer {
+    color: floralwhite;
+    font-weight: bold;
+    width: 50%;
+    height: 11vw;
+    border-radius: 40px;
+    border: none;
+    align-self: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+    font-size: 3.5vw;
+  }
+  .explorer:hover {
+    filter: brightness(125%);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
+    transform: scale(1.05);
+  }
 }
-.explorer:hover {
-  filter: brightness(125%);
-  box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
-  transform: scale(1.05);
+/*---------------------TABLETTE--------------------------------*/
+@media (min-width: 497px) and (max-width: 769px) {
+  .explorer {
+    color: floralwhite;
+    font-weight: 100;
+    width: 50%;
+    height: 11vw;
+    border-radius: 40px;
+    border: none;
+    align-self: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+    font-size: 3vw;
+  }
+  .explorer:hover {
+    filter: brightness(125%);
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
+    transform: scale(1.05);
+  }
 }
-
 /*---------------------DESKTOP------------------*/
 @media (min-width: 770px) {
   .explorer {
@@ -284,6 +305,7 @@ html img, body img {
     animation-timing-function: ease-in-out;
   }
   .title h1 .heart {
+    /*------------------------------TABLETTE----------------------------*/
     /*------------------DESKTOP----------------------*/
     animation-name: fadein;
     animation-duration: 1s;
@@ -329,14 +351,13 @@ html img, body img {
 }
 @media (max-width: 498px) and (min-width: 499px) and (max-width: 769px) {
   .title h1 .heart {
-    font-size: 8vw;
+    font-size: 6vw;
     display: flex;
     justify-content: flex-end;
     position: absolute;
     right: 5vw;
     height: 15vw;
     width: 9vw;
-    top: 2vw;
     border: none;
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -344,7 +365,7 @@ html img, body img {
   .title h1 .heart i.far {
     color: #686565;
     position: absolute;
-    top: 4vw;
+    top: 1vw;
     opacity: 1;
   }
   .title h1 .heart i.far:hover {
@@ -353,13 +374,13 @@ html img, body img {
   .title h1 .heart i.fas {
     opacity: 0;
     position: absolute;
-    top: 4vw;
+    top: 1vw;
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .title h1 .heart i.fas:hover {
-    font-size: 8vw;
+    font-size: 6vw;
     transition: 600ms;
     opacity: 1;
   }
@@ -459,7 +480,7 @@ html img, body img {
     }
   }
   .first-container .first-container-wrapper .container:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
   }
   .first-container .first-container-wrapper .container:hover .check {
@@ -475,7 +496,7 @@ html img, body img {
     left: 55vw;
   }
   .first-container .first-container-wrapper .container:hover > .sub {
-    width: 65%;
+    width: 60%;
   }
   .first-container .first-container-wrapper .container .check {
     display: flex;
@@ -485,7 +506,7 @@ html img, body img {
     height: 100%;
     position: absolute;
     right: -100px;
-    font-size: 8vw;
+    font-size: 5.5vw;
     margin-left: 75vw;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -504,9 +525,12 @@ html img, body img {
   .first-container .first-container-wrapper .bold {
     margin-top: 2vw;
     font-weight: bolder;
-    font-size: 4.3vw;
+    font-size: 4vw;
     display: flex;
     justify-content: flex-start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 @media (max-width: 498px) {
@@ -527,7 +551,7 @@ html img, body img {
     flex-wrap: wrap;
     width: 10%;
     position: absolute;
-    top: 7.5vw;
+    top: 9vw;
     left: 70vw;
   }
 }
@@ -556,6 +580,7 @@ html img, body img {
     animation-timing-function: ease-in-out;
   }
   .title h1 .heart {
+    /*------------------------------TABLETTE----------------------------*/
     /*------------------DESKTOP----------------------*/
     animation-name: fadein;
     animation-duration: 1s;
@@ -601,14 +626,13 @@ html img, body img {
 }
 @media (min-width: 497px) and (max-width: 769px) and (min-width: 499px) and (max-width: 769px) {
   .title h1 .heart {
-    font-size: 8vw;
+    font-size: 6vw;
     display: flex;
     justify-content: flex-end;
     position: absolute;
     right: 5vw;
     height: 15vw;
     width: 9vw;
-    top: 2vw;
     border: none;
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -616,7 +640,7 @@ html img, body img {
   .title h1 .heart i.far {
     color: #686565;
     position: absolute;
-    top: 4vw;
+    top: 1vw;
     opacity: 1;
   }
   .title h1 .heart i.far:hover {
@@ -625,13 +649,13 @@ html img, body img {
   .title h1 .heart i.fas {
     opacity: 0;
     position: absolute;
-    top: 4vw;
+    top: 1vw;
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .title h1 .heart i.fas:hover {
-    font-size: 8vw;
+    font-size: 6vw;
     transition: 600ms;
     opacity: 1;
   }
@@ -706,8 +730,8 @@ html img, body img {
     background-color: white;
     border-radius: 30px;
     width: 90%;
-    height: 17vw;
-    margin: 20px;
+    height: 13vw;
+    margin: 4vw;
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.082);
     display: flex;
     justify-content: flex-start;
@@ -718,7 +742,7 @@ html img, body img {
     animation-name: fadein;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     margin-left: 6vw;
   }
   @keyframes fadein {
@@ -733,7 +757,7 @@ html img, body img {
     }
   }
   .first-container .first-container-wrapper .container:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
   }
   .first-container .first-container-wrapper .container:hover .check {
@@ -759,7 +783,7 @@ html img, body img {
     height: 100%;
     position: absolute;
     right: -150px;
-    font-size: 8vw;
+    font-size: 5vw;
     margin-left: 75vw;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -802,7 +826,7 @@ html img, body img {
     width: 10%;
     position: absolute;
     top: 7.5vw;
-    left: 70vw;
+    left: 74vw;
   }
 }
 /*------------------DESKTOP----------------------*/
@@ -830,6 +854,7 @@ html img, body img {
     animation-timing-function: ease-in-out;
   }
   .title h1 .heart {
+    /*------------------------------TABLETTE----------------------------*/
     /*------------------DESKTOP----------------------*/
     animation-name: fadein;
     animation-duration: 1s;
@@ -875,14 +900,13 @@ html img, body img {
 }
 @media (min-width: 770px) and (min-width: 499px) and (max-width: 769px) {
   .title h1 .heart {
-    font-size: 8vw;
+    font-size: 6vw;
     display: flex;
     justify-content: flex-end;
     position: absolute;
     right: 5vw;
     height: 15vw;
     width: 9vw;
-    top: 2vw;
     border: none;
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -890,7 +914,7 @@ html img, body img {
   .title h1 .heart i.far {
     color: #686565;
     position: absolute;
-    top: 4vw;
+    top: 1vw;
     opacity: 1;
   }
   .title h1 .heart i.far:hover {
@@ -899,13 +923,13 @@ html img, body img {
   .title h1 .heart i.fas {
     opacity: 0;
     position: absolute;
-    top: 4vw;
+    top: 1vw;
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .title h1 .heart i.fas:hover {
-    font-size: 8vw;
+    font-size: 6vw;
     transition: 600ms;
     opacity: 1;
   }
@@ -1015,7 +1039,7 @@ html img, body img {
     }
   }
   .first-container .first-container-wrapper .container:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
     box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.308);
   }
   .first-container .first-container-wrapper .container:hover .check {
@@ -1026,6 +1050,9 @@ html img, body img {
   .first-container .first-container-wrapper .container:hover .check i.fas {
     transform: rotate(360deg);
     transition: 500ms linear;
+  }
+  .first-container .first-container-wrapper .container:hover > .bold {
+    width: 40vw;
   }
   .first-container .first-container-wrapper .container:hover > .price {
     right: 8vw;
@@ -1053,17 +1080,23 @@ html img, body img {
 }
 @media (min-width: 770px) {
   .first-container .first-container-wrapper p {
-    margin: 1vw;
-    margin-left: 3vw;
+    margin: 0.5vw;
+    margin-left: 1vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 @media (min-width: 770px) {
   .first-container .first-container-wrapper .bold {
-    margin-top: 0.9vw;
+    margin-top: 1vw;
     font-weight: bolder;
     font-size: 1.4vw;
     display: flex;
     justify-content: flex-start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 @media (min-width: 770px) {
@@ -1072,20 +1105,20 @@ html img, body img {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 1vw;
+    font-size: 1.4vw;
   }
 }
 @media (min-width: 770px) {
   .first-container .first-container-wrapper .price {
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-weight: bolder;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 10%;
     position: absolute;
-    top: 3.5vw;
-    right: 4vw;
+    top: 3.8vw;
+    right: 2vw;
   }
 }
 .select {
@@ -1180,9 +1213,9 @@ html img, body img {
   }
   .end ul li {
     list-style: none;
-    margin: 5vw;
+    margin: 2vw;
     color: white;
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .end ul i.fas {
     color: white;

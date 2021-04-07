@@ -45,7 +45,7 @@
         justify-content: center;
         align-content: center;
         position: relative;
-        padding-left: 42vw;
+        padding-left: 40vw;
         height: 10vw;
         width: 10vw;
         border: none;
@@ -173,22 +173,22 @@
         }
       }   
 }
+/*------------------------------TABLETTE----------------------------*/
 @media (min-width: 499px) and (max-width: 769px){
-    font-size: 8vw;
+    font-size: 6vw;
     display: flex;
     justify-content: flex-end;
     position: absolute;
     right: 5vw;
     height: 15vw;
     width: 9vw;
-    top: 2vw;
     border: none;
     background:rgba(0, 0, 0, 0);
     cursor: pointer;
     i.far{
         color: rgb(104, 101, 101);
         position: absolute;
-        top: 4vw;
+        top: 1vw;
         opacity: 1;
         &:hover{
             opacity: 0;
@@ -197,14 +197,14 @@
     i.fas{
         opacity: 0;
         position: absolute;
-        top: 4vw;
+        top: 1vw;
         @include grad;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         
        
         &:hover{
-            font-size: 8vw;
+            font-size: 6vw;
             transition: 600ms;
             opacity: 1;
             
@@ -212,6 +212,7 @@
         }
       }    
 }
+
 /*------------------DESKTOP----------------------*/
 @media (min-width: 770px) {
     font-size: 3vw;

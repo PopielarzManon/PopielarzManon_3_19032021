@@ -37,10 +37,13 @@ ol{
         position: absolute;
         color: rgb(255, 255, 255);
         content: counter(item);
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
+        display: flex;
         vertical-align: top;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         background: $primary;
         border-radius: 20px;
         margin-right: 63vw;
@@ -81,7 +84,7 @@ ul{
 ol{
     list-style: none;
     counter-reset: item;
-    font-size: 3.5vw;
+    font-size: 3vw;
 
 }
 
@@ -93,7 +96,7 @@ ol{
     @include shadows;
     border-radius: 20px;
     width: 70%;
-    height: 100px;
+    height: 9vw;
     margin: 15px;
     display: flex;
     justify-content: center;
@@ -110,7 +113,7 @@ ol{
         text-align: center;
         background: $primary;
         border-radius: 20px;
-        margin-right: 63vw;
+        margin-right: 65vw;
         display: flex;
             align-content: center;
             justify-content: center;
