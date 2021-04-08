@@ -226,6 +226,9 @@
     border: none;
     background:rgba(0, 0, 0, 0);
     cursor: pointer;
+    button{
+        outline: none;
+    }
     i.far{
         color: rgb(104, 101, 101);
         position: absolute;

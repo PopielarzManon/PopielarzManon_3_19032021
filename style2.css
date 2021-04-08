@@ -399,6 +399,9 @@ html img, body img {
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
   }
+  .title h1 .heart button {
+    outline: none;
+  }
   .title h1 .heart i.far {
     color: #686565;
     position: absolute;
@@ -674,6 +677,9 @@ html img, body img {
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
   }
+  .title h1 .heart button {
+    outline: none;
+  }
   .title h1 .heart i.far {
     color: #686565;
     position: absolute;
@@ -825,8 +831,8 @@ html img, body img {
     flex-wrap: wrap;
     width: 10%;
     position: absolute;
-    top: 7.5vw;
-    left: 74vw;
+    top: 7vw;
+    left: 67vw;
   }
 }
 /*------------------DESKTOP----------------------*/
@@ -947,6 +953,9 @@ html img, body img {
     border: none;
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
+  }
+  .title h1 .heart button {
+    outline: none;
   }
   .title h1 .heart i.far {
     color: #686565;
