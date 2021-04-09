@@ -1177,9 +1177,9 @@ html img, body img {
     margin: 0;
     padding-top: 20px;
     margin-left: 5vw;
-  }
-  .end h3 img {
-    transform: scale(0.8);
+    color: aliceblue;
+    font-family: "Shrikhand", cursive;
+    font-size: 8vw;
   }
   .end li {
     list-style: none;
@@ -1209,9 +1209,9 @@ html img, body img {
     margin: 0;
     padding-top: 50px;
     padding-bottom: 10px;
-  }
-  .end h3 img {
-    transform: scale(1.2);
+    color: aliceblue;
+    font-family: "Shrikhand", cursive;
+    font-size: 7vw;
   }
   .end ul {
     margin-right: 10vw;
@@ -1248,9 +1248,9 @@ html img, body img {
     margin: 0;
     padding-top: 3vw;
     padding-bottom: 0.5vw;
-  }
-  .end h3 img {
-    transform: scale(1);
+    color: aliceblue;
+    font-family: "Shrikhand", cursive;
+    font-size: 3vw;
   }
   .end ul {
     display: flex;

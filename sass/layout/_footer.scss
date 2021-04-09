@@ -13,9 +13,10 @@
         margin: 0;
         padding-top: 20px;
         margin-left: 5vw;
-        img{
-            transform: scale(0.8);
-        }
+        color: aliceblue;
+        font-family: 'Shrikhand', cursive;
+        font-size: 8vw;
+        
         
     }
    
@@ -30,6 +31,7 @@
         margin-right: 10px;
     }
 }
+
 }
 /*---------------------TABLETTE--------------------------------*/
 @media (min-width: 497px) and (max-width: 769px){
@@ -51,10 +53,9 @@
             margin: 0;
             padding-top: 50px;
             padding-bottom: 10px;
-            img{
-                transform: scale(1.2);
-            }
-            
+            color: aliceblue;
+            font-family: 'Shrikhand', cursive;
+            font-size: 7vw;
         }
         ul{
         
@@ -99,9 +100,9 @@
             margin: 0;
             padding-top: 3vw;
             padding-bottom: 0.5vw;
-            img{
-                transform: scale(1);
-            }
+            color: aliceblue;
+            font-family: 'Shrikhand', cursive;
+            font-size: 3vw;
             
         }
         ul{
